@@ -1,0 +1,38 @@
+{
+  "name": "css-helper-class",
+  "version": "1.0.0",
+  "description": "General CSS helper class",
+  "main": "dist/helper.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nzbin/css-helper-class.git"
+  },
+  "author": "nzbin <nzb329@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nzbin/css-helper-class/issues"
+  },
+  "homepage": "https://github.com/nzbin/css-helper-class#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.14.0",
+    "eslint-config-styled": "^0.0.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^2.3.0",
+    "onchange": "^2.5.0",
+    "postcss-cli": "^2.6.0",
+    "rimraf": "^2.5.4"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "run-p build watch",
+    "build": "run-s clean sass autoprefixer",
+    "clean": "rimraf dist",
+    "sass": "node-sass --output-style expanded src/style.scss dist/helper.css && node-sass --output-style compressed src/style.scss dist/helper.min.css",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+    "watch": "onchange src -- run-p build"
+  }
+}
