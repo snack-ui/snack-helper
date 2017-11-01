@@ -16,8 +16,6 @@
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^3.14.0",
-    "eslint-config-styled": "^0.0.0",
     "node-sass": "^4.5.3",
     "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
