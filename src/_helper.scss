@@ -1,34 +1,14 @@
-/* Predefined Classes */
+// ----------------------------------------------
+// Predefined Classes
+// ----------------------------------------------
 
-/* overflow */
-.overflow-auto { overflow: auto !important; }
-.overflow-hidden { overflow: hidden !important; }
-.overflow-visible { overflow: visible !important; }
-.overflow-scroll { overflow: scroll !important; }
-.overflow-x-hidden { overflow-x: hidden !important; }
-.overflow-x-visible { overflow-x: visible !important; }
-.overflow-x-scroll { overflow-x: scroll !important; }
-.overflow-y-hidden { overflow-y: hidden !important; }
-.overflow-y-visible { overflow-y: visible !important; }
-.overflow-y-scroll { overflow-y: scroll !important; }
 
-/* text-align & float */
-.text-center { text-align: center !important; }
-.text-left { text-align: left !important; }
-.text-right { text-align: right !important; }
-.pull-left { float: left !important; }
-.pull-right { float: right !important; }
-.pull-none { float: none !important; }
+/* LOOP - gutter */
+@for $counter from 0 through 15 {
 
-/* vetical-align */
-.v-a-m{ vertical-align: middle !important; }
-.v-a-t{ vertical-align: top !important; }
-.v-a-b{vertical-align: bottom !important; }
-
-/* LOOP - Row Space */
-@for $counter from 1 through 15 {
     $nameCounter: (2 * $counter);
-    .row.row-space-#{ $nameCounter }{
+
+    .row.gutter-#{ $nameCounter }{
         margin: 0 -(1px * $counter) !important;
         &>[class*="col-"] {
             padding: 0 (1px * $counter) !important;
@@ -59,6 +39,7 @@
     .m-l-#{ $counter * 5 }{
         margin-left: ($counter * 5px) !important;
     }
+
     .p-#{ $counter * 5 }{
         padding: ($counter * 5px) !important;
     }
@@ -104,22 +85,42 @@
     }
 }
 
-/* text-overflow */
-.text-ellipsis { white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
-
-/* vertical-box */
-.vertical-box { display: table; table-layout: fixed; border-spacing: 0; height: 100%; width: 100%; }
-.vertical-box-column { display: table-cell; vertical-align: top; height: 100%; }
-.vertical-box-row { display: table-row; height: 100%; }
-.vertical-box-row>.vertical-box-cell { position: relative; height: 100%; width: 100%; float: none; }
-.vertical-box-row>.vertical-box-cell>.vertical-box-inner-cell { position: absolute; top: 0; bottom: 0; left: 0; right: 0; overflow: hidden; }
-.panel-expand .vertical-box .vertical-box-column { display: table-cell; }
-.page-content-full-height .content { position: absolute; left: 0; top: 54px; right: 0; bottom: -1px; }
-
 /* border */
 .no-border { border: 0 !important; }
 .border-top { border-top: 1px solid #eee !important; }
 .border-right { border-right: 1px solid #eee !important; }
 .border-bottom { border-bottom: 1px solid #eee !important; }
 .border-left { border-left: 1px solid #eee !important; }
+
+/* box-shadow */
 .no-box-shadow { box-shadow: none !important; }
+
+/* text-align */
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+
+/* vetical-align */
+.align-top{ vertical-align: top !important; }
+.align-middle{ vertical-align: middle !important; }
+.align-bottom{ vertical-align: bottom !important; }
+
+/* text-overflow */
+.text-ellipsis { white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+
+/* float */
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+.pull-none { float: none !important; }
+
+/* overflow */
+.overflow-auto { overflow: auto !important; }
+.overflow-hidden { overflow: hidden !important; }
+.overflow-visible { overflow: visible !important; }
+.overflow-scroll { overflow: scroll !important; }
+.overflow-x-hidden { overflow-x: hidden !important; }
+.overflow-x-visible { overflow-x: visible !important; }
+.overflow-x-scroll { overflow-x: scroll !important; }
+.overflow-y-hidden { overflow-y: hidden !important; }
+.overflow-y-visible { overflow-y: visible !important; }
+.overflow-y-scroll { overflow-y: scroll !important; }
