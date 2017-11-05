@@ -1,18 +1,18 @@
 {
-  "name": "css-helper-class",
+  "name": "snack-helper",
   "version": "1.0.0",
   "description": "General CSS helper class",
-  "main": "dist/helper.css",
+  "main": "dist/snack-helper.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nzbin/css-helper-class.git"
+    "url": "git+https://github.com/nzbin/snack-helper.git"
   },
   "author": "nzbin <nzb329@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nzbin/css-helper-class/issues"
+    "url": "https://github.com/nzbin/snack-helper/issues"
   },
-  "homepage": "https://github.com/nzbin/css-helper-class#readme",
+  "homepage": "https://github.com/nzbin/snack-helper#readme",
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "editorconfig-tools": "^0.1.1",
@@ -29,7 +29,7 @@
     "start": "run-p build watch",
     "build": "run-s clean sass autoprefixer",
     "clean": "rimraf dist",
-    "sass": "node-sass --output-style expanded src/style.scss dist/helper.css && node-sass --output-style compressed src/style.scss dist/helper.min.css",
+    "sass": "node-sass --output-style expanded src/helper.scss dist/snack-helper.css && node-sass --output-style compressed src/helper.scss dist/snack-helper.min.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
     "watch": "onchange src -- run-p build"
   }

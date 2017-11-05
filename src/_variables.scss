@@ -1,4 +1,91 @@
 // --------------------------------------------------
 // Variables
 // --------------------------------------------------
-
+// color gray
+$gray:#999;
+$gray-light:lighten($gray, 15%);
+$gray-lighter:lighten($gray, 25%);
+$gray-lightest:lighten($gray, 35%);
+$gray-dark:darken($gray, 15%);
+$gray-darker:darken($gray, 25%);
+$gray-darkest:darken($gray, 35%);
+// color brown
+$brown:#a57868;
+$brown-light:lighten($brown, 15%);
+$brown-lighter:lighten($brown, 25%);
+$brown-lightest:lighten($brown, 35%);
+$brown-dark:darken($brown, 15%);
+$brown-darker:darken($brown, 25%);
+$brown-darkest:darken($brown, 35%);
+// color red
+$red:#ff291d;
+$red-light:lighten($red, 15%);
+$red-lighter:lighten($red, 25%);
+$red-lightest:lighten($red, 35%);
+$red-dark:darken($red, 15%);
+$red-darker:darken($red, 25%);
+$red-darkest:darken($red, 35%);
+// color orange
+$orange:#ff9500;
+$orange-light:lighten($orange, 15%);
+$orange-lighter:lighten($orange, 25%);
+$orange-lightest:lighten($orange, 35%);
+$orange-dark:darken($orange, 15%);
+$orange-darker:darken($orange, 25%);
+$orange-darkest:darken($orange, 35%);
+// color yellow
+$yellow:#ffe70e;
+$yellow-light:lighten($yellow, 15%);
+$yellow-lighter:lighten($yellow, 25%);
+$yellow-lightest:lighten($yellow, 35%);
+$yellow-dark:darken($yellow, 15%);
+$yellow-darker:darken($yellow, 25%);
+$yellow-darkest:darken($yellow, 35%);
+// color green
+$green:#4cd964;
+$green-light:lighten($green, 15%);
+$green-lighter:lighten($green, 25%);
+$green-lightest:lighten($green, 35%);
+$green-dark:darken($green, 15%);
+$green-darker:darken($green, 25%);
+$green-darkest:darken($green, 35%);
+// color teal
+$teal:#18e0cd;
+$teal-light:lighten($teal, 15%);
+$teal-lighter:lighten($teal, 25%);
+$teal-lightest:lighten($teal, 35%);
+$teal-dark:darken($teal, 15%);
+$teal-darker:darken($teal, 25%);
+$teal-darkest:darken($teal, 35%);
+// color blue
+$blue:#007aff;
+$blue-light:lighten($blue, 15%);
+$blue-lighter:lighten($blue, 25%);
+$blue-lightest:lighten($blue, 35%);
+$blue-dark:darken($blue, 15%);
+$blue-darker:darken($blue, 25%);
+$blue-darkest:darken($blue, 35%);
+// color indigo
+$indigo:#5f6ec7;
+$indigo-light:lighten($indigo, 15%);
+$indigo-lighter:lighten($indigo, 25%);
+$indigo-lightest:lighten($indigo, 35%);
+$indigo-dark:darken($indigo, 15%);
+$indigo-darker:darken($indigo, 25%);
+$indigo-darkest:darken($indigo, 35%);
+// color purple
+$purple:#af2ec5;
+$purple-light:lighten($purple, 15%);
+$purple-lighter:lighten($purple, 25%);
+$purple-lightest:lighten($purple, 35%);
+$purple-dark:darken($purple, 15%);
+$purple-darker:darken($purple, 25%);
+$purple-darkest:darken($purple, 35%);
+// color pink
+$pink:#ff3069;
+$pink-light:lighten($pink, 15%);
+$pink-lighter:lighten($pink, 25%);
+$pink-lightest:lighten($pink, 35%);
+$pink-dark:darken($pink, 15%);
+$pink-darker:darken($pink, 25%);
+$pink-darkest:darken($pink, 35%);
