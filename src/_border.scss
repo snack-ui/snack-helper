@@ -5,22 +5,28 @@
     border: 0 !important;
 }
 
-.border-top {
+// default border
+.b {
+    border: 1px solid #eee !important;
+}
+
+.b-t {
     border-top: 1px solid #eee !important;
 }
 
-.border-right {
+.b-r {
     border-right: 1px solid #eee !important;
 }
 
-.border-bottom {
+.b-b {
     border-bottom: 1px solid #eee !important;
 }
 
-.border-left {
+.b-l {
     border-left: 1px solid #eee !important;
 }
 
+// border-width
 @for $counter from 0 through 5 {
     .b-#{ $counter } {
         border-width: ($counter * 1px) !important;
@@ -28,13 +34,13 @@
     .b-t-#{ $counter } {
         border-top-width: ($counter * 1px) !important;
     }
+    .b-r-#{ $counter } {
+        border-right-width: ($counter * 1px) !important;
+    }
     .b-b-#{ $counter } {
         border-bottom-width: ($counter * 1px) !important;
     }
     .b-l-#{ $counter } {
         border-left-width: ($counter * 1px) !important;
-    }
-    .b-r-#{ $counter } {
-        border-right-width: ($counter * 1px) !important;
     }
 }
