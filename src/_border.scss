@@ -20,3 +20,21 @@
 .border-left {
     border-left: 1px solid #eee !important;
 }
+
+@for $counter from 0 through 5 {
+    .b-#{ $counter } {
+        border-width: ($counter * 1px) !important;
+    }
+    .b-t-#{ $counter } {
+        border-top-width: ($counter * 1px) !important;
+    }
+    .b-b-#{ $counter } {
+        border-bottom-width: ($counter * 1px) !important;
+    }
+    .b-l-#{ $counter } {
+        border-left-width: ($counter * 1px) !important;
+    }
+    .b-r-#{ $counter } {
+        border-right-width: ($counter * 1px) !important;
+    }
+}
