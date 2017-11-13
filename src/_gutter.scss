@@ -1,13 +1,7 @@
 // ----------------------------------------------
 // Gutter
 // ----------------------------------------------
-.row.no-gutter {
-    margin: 0 !important;
-    &>[class*="col-"] {
-        padding: 0 !important;
-    }
-}
-
+.row.no-gutter,
 .row.gutter-0 {
     margin: 0 !important;
     &>[class*="col-"] {
