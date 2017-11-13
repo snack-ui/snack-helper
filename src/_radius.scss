@@ -1,4 +1,40 @@
 // ----------------------------------------------
 // Radius
 // ----------------------------------------------
+.r-full {
+    border-radius: 100%
+}
 
+.r-t-l-full {
+    border-top-left-radius: 100%
+}
+
+.r-t-r-full {
+    border-top-right-radius: 100%
+}
+
+.r-b-r-full {
+    border-bottom-right-radius: 100%
+}
+
+.r-b-l-full {
+    border-bottom-left-radius: 100%
+}
+
+@for $counter from 0 through 10 {
+    .r-#{ $counter } {
+        border-radius: ($counter * 1px) !important;
+    }
+    .r-t-l-#{ $counter } {
+        border-top-left-radius: ($counter * 1px) !important;
+    }
+    .r-t-r-#{ $counter } {
+        border-top-right-radius: ($counter * 1px) !important;
+    }
+    .r-b-r-#{ $counter } {
+        border-bottom-right-radius: ($counter * 1px) !important;
+    }
+    .r-b-l-#{ $counter } {
+        border-bottom-left-radius: ($counter * 1px) !important;
+    }
+}
