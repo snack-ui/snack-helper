@@ -2,244 +2,26 @@
 // Text Colors
 // --------------------------------------------------
 
-.text-gray{
-    color:$gray !important;
-}
-.text-gray-light{
-    color:$gray-light !important;
-}
-.text-gray-lighter{
-    color:$gray-lighter !important;
-}
-.text-gray-lightest{
-    color:$gray-lightest !important;
-}
-.text-gray-dark{
-    color:$gray-dark !important;
-}
-.text-gray-darker{
-    color:$gray-darker !important;
-}
-.text-gray-darkest{
-    color:$gray-darkest !important;
-}
-
-.text-brown{
-    color:$brown !important;
-}
-.text-brown-light{
-    color:$brown-light !important;
-}
-.text-brown-lighter{
-    color:$brown-lighter !important;
-}
-.text-brown-lightest{
-    color:$brown-lightest !important;
-}
-.text-brown-dark{
-    color:$brown-dark !important;
-}
-.text-brown-darker{
-    color:$brown-darker !important;
-}
-.text-brown-darkest{
-    color:$brown-darkest !important;
-}
-
-.text-red{
-    color:$red !important;
-}
-.text-red-light{
-    color:$red-light !important;
-}
-.text-red-lighter{
-    color:$red-lighter !important;
-}
-.text-red-lightest{
-    color:$red-lightest !important;
-}
-.text-red-dark{
-    color:$red-dark !important;
-}
-.text-red-darker{
-    color:$red-darker !important;
-}
-.text-red-darkest{
-    color:$red-darkest !important;
-}
-
-.text-orange{
-    color:$orange !important;
-}
-.text-orange-light{
-    color:$orange-light !important;
-}
-.text-orange-lighter{
-    color:$orange-lighter !important;
-}
-.text-orange-lightest{
-    color:$orange-lightest !important;
-}
-.text-orange-dark{
-    color:$orange-dark !important;
-}
-.text-orange-darker{
-    color:$orange-darker !important;
-}
-.text-orange-darkest{
-    color:$orange-darkest !important;
-}
-
-.text-yellow{
-    color:$yellow !important;
-}
-.text-yellow-light{
-    color:$yellow-light !important;
-}
-.text-yellow-lighter{
-    color:$yellow-lighter !important;
-}
-.text-yellow-lightest{
-    color:$yellow-lightest !important;
-}
-.text-yellow-dark{
-    color:$yellow-dark !important;
-}
-.text-yellow-darker{
-    color:$yellow-darker !important;
-}
-.text-yellow-darkest{
-    color:$yellow-darkest !important;
-}
-
-.text-green{
-    color:$green !important;
-}
-.text-green-light{
-    color:$green-light !important;
-}
-.text-green-lighter{
-    color:$green-lighter !important;
-}
-.text-green-lightest{
-    color:$green-lightest !important;
-}
-.text-green-dark{
-    color:$green-dark !important;
-}
-.text-green-darker{
-    color:$green-darker !important;
-}
-.text-green-darkest{
-    color:$green-darkest !important;
-}
-
-.text-teal{
-    color:$teal !important;
-}
-.text-teal-light{
-    color:$teal-light !important;
-}
-.text-teal-lighter{
-    color:$teal-lighter !important;
-}
-.text-teal-lightest{
-    color:$teal-lightest !important;
-}
-.text-teal-dark{
-    color:$teal-dark !important;
-}
-.text-teal-darker{
-    color:$teal-darker !important;
-}
-.text-teal-darkest{
-    color:$teal-darkest !important;
-}
-
-.text-blue{
-    color:$blue !important;
-}
-.text-blue-light{
-    color:$blue-light !important;
-}
-.text-blue-lighter{
-    color:$blue-lighter !important;
-}
-.text-blue-lightest{
-    color:$blue-lightest !important;
-}
-.text-blue-dark{
-    color:$blue-dark !important;
-}
-.text-blue-darker{
-    color:$blue-darker !important;
-}
-.text-blue-darkest{
-    color:$blue-darkest !important;
-}
-
-.text-indigo{
-    color:$indigo !important;
-}
-.text-indigo-light{
-    color:$indigo-light !important;
-}
-.text-indigo-lighter{
-    color:$indigo-lighter !important;
-}
-.text-indigo-lightest{
-    color:$indigo-lightest !important;
-}
-.text-indigo-dark{
-    color:$indigo-dark !important;
-}
-.text-indigo-darker{
-    color:$indigo-darker !important;
-}
-.text-indigo-darkest{
-    color:$indigo-darkest !important;
-}
-
-.text-purple{
-    color:$purple !important;
-}
-.text-purple-light{
-    color:$purple-light !important;
-}
-.text-purple-lighter{
-    color:$purple-lighter !important;
-}
-.text-purple-lightest{
-    color:$purple-lightest !important;
-}
-.text-purple-dark{
-    color:$purple-dark !important;
-}
-.text-purple-darker{
-    color:$purple-darker !important;
-}
-.text-purple-darkest{
-    color:$purple-darkest !important;
-}
-
-.text-pink{
-    color:$pink !important;
-}
-.text-pink-light{
-    color:$pink-light !important;
-}
-.text-pink-lighter{
-    color:$pink-lighter !important;
-}
-.text-pink-lightest{
-    color:$pink-lightest !important;
-}
-.text-pink-dark{
-    color:$pink-dark !important;
-}
-.text-pink-darker{
-    color:$pink-darker !important;
-}
-.text-pink-darkest{
-    color:$pink-darkest !important;
+@each $name,$color in $color-list {
+    .text-#{$name} {
+        color: $color;
+    }
+    .text-#{$name}-light {
+        color: lighten($color, 15%);
+    }
+    .text-#{$name}-lighter {
+        color: lighten($color, 25%);
+    }
+    .text-#{$name}-lightest {
+        color: lighten($color, 35%);
+    }
+    .text-#{$name}-dark {
+        color: darken($color, 15%);
+    }
+    .text-#{$name}-darker {
+        color: darken($color, 25%);
+    }
+    .text-#{$name}-darkest {
+        color: darken($color, 35%);
+    }
 }
