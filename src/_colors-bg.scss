@@ -2,6 +2,18 @@
 // Background Colors
 // --------------------------------------------------
 
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-black{
+    background-color: #2d353c;
+}
+
 @each $name,$color in $color-list {
     .bg-#{$name} {
         background-color: $color;

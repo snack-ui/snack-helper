@@ -1,0 +1,36 @@
+.sidebar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.sidebar > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar > ul > li + li {
+  margin-top: 2px;
+}
+
+.sidebar > ul > li {
+  position: relative;
+  display: block;
+}
+
+.sidebar > ul > li > a {
+  position: relative;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #555;
+}
+
+.sidebar > ul > li > a:hover, .sidebar > ul > li > a:focus, .sidebar > ul > li > a:active {
+  text-decoration: none;
+  background-color: #eee;
+}

@@ -22,19 +22,19 @@
 }
 
 @for $counter from 0 through 10 {
-    .r-#{ $counter } {
-        border-radius: ($counter * 1px) !important;
+    .r-#{ $counter * 2 } {
+        border-radius: ($counter * 2px) !important;
     }
     .r-t-l-#{ $counter } {
-        border-top-left-radius: ($counter * 1px) !important;
+        border-top-left-radius: ($counter * 2px) !important;
     }
     .r-t-r-#{ $counter } {
-        border-top-right-radius: ($counter * 1px) !important;
+        border-top-right-radius: ($counter * 2px) !important;
     }
     .r-b-r-#{ $counter } {
-        border-bottom-right-radius: ($counter * 1px) !important;
+        border-bottom-right-radius: ($counter * 2px) !important;
     }
     .r-b-l-#{ $counter } {
-        border-bottom-left-radius: ($counter * 1px) !important;
+        border-bottom-left-radius: ($counter * 2px) !important;
     }
 }

@@ -2,6 +2,14 @@
 // Text Colors
 // --------------------------------------------------
 
+.text-white{
+    color: #fff;
+}
+
+.text-black{
+    color: #2d353c;
+}
+
 @each $name,$color in $color-list {
     .text-#{$name} {
         color: $color;
