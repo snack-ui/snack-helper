@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "General CSS helper class",
   "main": "dist/snack-helper.css",
+  "homepage": "https://github.com/nzbin/snack-helper#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nzbin/snack-helper.git"
@@ -12,7 +13,12 @@
   "bugs": {
     "url": "https://github.com/nzbin/snack-helper/issues"
   },
-  "homepage": "https://github.com/nzbin/snack-helper#readme",
+  "keywords": [
+    "css-helpers",
+    "snack-helper",
+    "css-variables",
+    "sass"
+  ],
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "editorconfig-tools": "^0.1.1",
