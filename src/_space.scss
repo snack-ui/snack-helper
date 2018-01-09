@@ -6,7 +6,7 @@
     margin: 0 auto !important;
 }
 
-@for $counter from 0 through 6 {
+@for $counter from 0 through 10 {
     .m-#{ $counter * 5 } {
         margin: ($counter * 5px) !important;
     }
@@ -25,7 +25,7 @@
 }
 
 // margin negtive
-@for $counter from 1 through 6 {
+@for $counter from 1 through 10 {
     .m-t--#{ $counter * 5 } {
         margin-top: ($counter * -5px) !important;
     }
@@ -41,7 +41,7 @@
 }
 
 // padding
-@for $counter from 0 through 6 {
+@for $counter from 0 through 10 {
     .p-#{ $counter * 5 } {
         padding: ($counter * 5px) !important;
     }
