@@ -30,7 +30,9 @@
   color: #555;
 }
 
-.sidebar > ul > li > a:hover, .sidebar > ul > li > a:focus, .sidebar > ul > li > a:active {
+.sidebar > ul > li > a:hover,
+.sidebar > ul > li > a:focus,
+.sidebar > ul > li > a:active {
   text-decoration: none;
   background-color: #eee;
 }
