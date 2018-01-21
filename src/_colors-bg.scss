@@ -1,39 +1,39 @@
 // --------------------------------------------------
 // Background Colors
 // --------------------------------------------------
-
-.bg-transparent{
-    background-color: transparent;
+.bg-transparent {
+  background-color: transparent;
 }
 
-.bg-white{
-    background-color: #fff;
+.bg-white {
+  background-color: #fff;
 }
 
-.bg-black{
-    background-color: #2d353c;
+.bg-black {
+  background-color: #2d353c;
 }
 
-@each $name,$color in $color-list {
-    .bg-#{$name} {
-        background-color: $color;
-    }
-    .bg-#{$name}-light {
-        background-color: lighten($color, 15%);
-    }
-    .bg-#{$name}-lighter {
-        background-color: lighten($color, 25%);
-    }
-    .bg-#{$name}-lightest {
-        background-color: lighten($color, 35%);
-    }
-    .bg-#{$name}-dark {
-        background-color: darken($color, 15%);
-    }
-    .bg-#{$name}-darker {
-        background-color: darken($color, 25%);
-    }
-    .bg-#{$name}-darkest {
-        background-color: darken($color, 35%);
-    }
+@each $name,
+$color in $color-list {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .bg-#{$name}-light {
+    background-color: lighten($color, 15%);
+  }
+  .bg-#{$name}-lighter {
+    background-color: lighten($color, 25%);
+  }
+  .bg-#{$name}-lightest {
+    background-color: lighten($color, 35%);
+  }
+  .bg-#{$name}-dark {
+    background-color: darken($color, 15%);
+  }
+  .bg-#{$name}-darker {
+    background-color: darken($color, 25%);
+  }
+  .bg-#{$name}-darkest {
+    background-color: darken($color, 35%);
+  }
 }

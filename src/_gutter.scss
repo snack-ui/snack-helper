@@ -3,18 +3,18 @@
 // ----------------------------------------------
 .row.no-gutter,
 .row.gutter-0 {
-    margin: 0 !important;
-    &>[class*="col-"] {
-        padding: 0 !important;
-    }
+  margin: 0 !important;
+  &>[class*="col-"] {
+    padding: 0 !important;
+  }
 }
 
 @for $counter from 1 through 15 {
-    $nameCounter: (2 * $counter);
-    .row.gutter-#{ $nameCounter } {
-        margin: 0 -(1px * $counter) !important;
-        &>[class*="col-"] {
-            padding: 0 (1px * $counter) !important;
-        }
+  $nameCounter: (2 * $counter);
+  .row.gutter-#{ $nameCounter } {
+    margin: 0 -(1px * $counter) !important;
+    &>[class*="col-"] {
+      padding: 0 (1px * $counter) !important;
     }
+  }
 }

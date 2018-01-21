@@ -1357,7 +1357,8 @@
   border-bottom-left-radius: 20px !important;
 }
 
-.no-shadow, .shadow-none {
+.no-shadow,
+.shadow-none {
   box-shadow: none !important;
 }
 

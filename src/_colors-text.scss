@@ -1,35 +1,34 @@
 // --------------------------------------------------
 // Text Colors
 // --------------------------------------------------
-
-.text-white{
-    color: #fff;
+.text-white {
+  color: #fff;
 }
 
-.text-black{
-    color: #2d353c;
+.text-black {
+  color: #2d353c;
 }
 
 @each $name,$color in $color-list {
-    .text-#{$name} {
-        color: $color;
-    }
-    .text-#{$name}-light {
-        color: lighten($color, 15%);
-    }
-    .text-#{$name}-lighter {
-        color: lighten($color, 25%);
-    }
-    .text-#{$name}-lightest {
-        color: lighten($color, 35%);
-    }
-    .text-#{$name}-dark {
-        color: darken($color, 15%);
-    }
-    .text-#{$name}-darker {
-        color: darken($color, 25%);
-    }
-    .text-#{$name}-darkest {
-        color: darken($color, 35%);
-    }
+  .text-#{$name} {
+    color: $color;
+  }
+  .text-#{$name}-light {
+    color: lighten($color, 15%);
+  }
+  .text-#{$name}-lighter {
+    color: lighten($color, 25%);
+  }
+  .text-#{$name}-lightest {
+    color: lighten($color, 35%);
+  }
+  .text-#{$name}-dark {
+    color: darken($color, 15%);
+  }
+  .text-#{$name}-darker {
+    color: darken($color, 25%);
+  }
+  .text-#{$name}-darkest {
+    color: darken($color, 35%);
+  }
 }

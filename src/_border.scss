@@ -2,28 +2,28 @@
 // Border
 // ----------------------------------------------
 .no-border {
-    border-width: 0 !important;
+  border-width: 0 !important;
 }
 
-.border-none{
-    border-style: none !important;
+.border-none {
+  border-style: none !important;
 }
 
 // border-width with default color and style
 @for $counter from 0 through 5 {
-    .b-#{ $counter } {
-        border: ($counter * 1px) solid #eee !important;
-    }
-    .b-t-#{ $counter } {
-        border-top: ($counter * 1px) solid #eee !important;
-    }
-    .b-r-#{ $counter } {
-        border-right: ($counter * 1px) solid #eee !important;
-    }
-    .b-b-#{ $counter } {
-        border-bottom: ($counter * 1px) solid #eee !important;
-    }
-    .b-l-#{ $counter } {
-        border-left: ($counter * 1px) solid #eee !important;
-    }
+  .b-#{ $counter } {
+    border: ($counter * 1px) solid #eee !important;
+  }
+  .b-t-#{ $counter } {
+    border-top: ($counter * 1px) solid #eee !important;
+  }
+  .b-r-#{ $counter } {
+    border-right: ($counter * 1px) solid #eee !important;
+  }
+  .b-b-#{ $counter } {
+    border-bottom: ($counter * 1px) solid #eee !important;
+  }
+  .b-l-#{ $counter } {
+    border-left: ($counter * 1px) solid #eee !important;
+  }
 }

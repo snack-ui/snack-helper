@@ -1,44 +1,45 @@
 // ----------------------------------------------
 // Typography
 // ----------------------------------------------
-
 // Font Weight
 @for $counter from 1 through 9 {
-    .f-w-#{ $counter * 100 } {
-        font-weight: ($counter * 100) !important;
-    }
+  .f-w-#{ $counter * 100 } {
+    font-weight: ($counter * 100) !important;
+  }
 }
 
 // Font Size
 @for $counter from 5 through 18 {
-    .f-s-#{ $counter * 2 } {
-        font-size: ($counter * 2px) !important;
-    }
+  .f-s-#{ $counter * 2 } {
+    font-size: ($counter * 2px) !important;
+  }
 }
 
 .f-s-0 {
-    font-size: 0;
+  font-size: 0;
 }
 
 // text-align
 .text-left {
-    text-align: left !important;
+  text-align: left !important;
 }
+
 .text-center {
-    text-align: center !important;
+  text-align: center !important;
 }
+
 .text-right {
-    text-align: right !important;
+  text-align: right !important;
 }
 
 // text-overflow
 .text-ellipsis {
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 // uppercase
 .text-uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
