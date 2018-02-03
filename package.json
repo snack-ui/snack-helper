@@ -22,7 +22,6 @@
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "cpy-cli": "^1.0.1",
-    "editorconfig-tools": "^0.1.1",
     "node-sass": "^4.5.3",
     "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
