@@ -1,7 +1,7 @@
 {
   "name": "snack-helper",
   "version": "1.0.0",
-  "description": "General CSS helper class",
+  "description": "Universal CSS helper class",
   "main": "dist/snack-helper.css",
   "homepage": "https://github.com/nzbin/snack-helper#readme",
   "repository": {
@@ -20,24 +20,30 @@
     "sass"
   ],
   "devDependencies": {
-    "autoprefixer": "^6.5.4",
+    "autoprefixer": "^7.1.6",
     "cpy-cli": "^1.0.1",
     "node-sass": "^4.5.3",
     "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
-    "postcss-cli": "^2.6.0",
-    "rimraf": "^2.5.4"
+    "postcss-cli": "^4.1.1",
+    "postcss-header": "^1.0.0",
+    "rimraf": "^2.5.4",
+    "stylelint": "^9.2.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.0.0"
   },
   "engines": {
     "node": ">=4"
   },
   "scripts": {
     "start": "run-p build watch",
-    "build": "run-s clean sass autoprefixer",
+    "build": "run-s clean sass sassmin postcss copy",
     "clean": "rimraf dist",
-    "sass": "node-sass --output-style expanded src/helper.scss dist/snack-helper.css && node-sass --output-style compressed src/helper.scss dist/snack-helper.min.css",
+    "sass": "node-sass --output-style expanded src/helper.scss dist/snack-helper.css",
+    "sassmin": "node-sass --output-style compressed src/helper.scss dist/snack-helper.min.css",
     "copy": "cpy dist/*.css !dist/*.min.css docs/css",
-    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+    "postcss": "postcss -r dist/*.css --map",
     "watch": "onchange src -- run-p build"
   }
 }
