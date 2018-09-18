@@ -1,0 +1,27 @@
+// ----------------------------------------------
+// Text
+// ----------------------------------------------
+// text-align
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+// text-overflow
+.text-ellipsis {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+// uppercase
+.text-uppercase {
+  text-transform: uppercase !important;
+}

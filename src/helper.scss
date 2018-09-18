@@ -1,22 +1,15 @@
-/**
- *
- * snack-helper.css v1.0.0
- *
- * https://nzbin.github.io/snack-helper/
- *
- * Copyright (c) 2017 nzbin
- *
- * Released under the MIT license
- *
- */
+// -----------------------
+// Snack-helper
+// -----------------------
 
  @import "variables";
- @import "typography";
+ @import "font";
+ @import "text";
  @import "alignment";
  @import "float";
  @import "gutter";
- @import "space";
- @import "size";
+ @import "spacing";
+ @import "sizing";
  @import "border";
  @import "radius";
  @import "shadow";

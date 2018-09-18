@@ -1,14 +1,13 @@
-/**
+
+/*!
+ * snack-helper - v1.0.0
+ * Universal CSS helper class
+ * https://github.com/nzbin/snack-helper#readme
  *
- * snack-helper.css v1.0.0
- *
- * https://nzbin.github.io/snack-helper/
- *
- * Copyright (c) 2017 nzbin
- *
- * Released under the MIT license
- *
+ * Copyright (c) 2017 nzbin <nzb329@163.com>
+ * Released under MIT License
  */
+
 .f-w-100 {
   font-weight: 100 !important;
 }
@@ -127,6 +126,28 @@
   text-transform: uppercase;
 }
 
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-ellipsis {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
 .align-top {
   vertical-align: top !important;
 }
@@ -139,24 +160,24 @@
   vertical-align: bottom !important;
 }
 
-.pull-left {
+.float-left {
   float: left !important;
 }
 
-.pull-right {
+.float-right {
   float: right !important;
 }
 
-.pull-none {
+.float-none {
   float: none !important;
 }
 
-.row.no-gutter,
+.row.no-gutters,
 .row.gutter-0 {
   margin: 0 !important;
 }
 
-.row.no-gutter > [class*="col-"],
+.row.no-gutters > [class*="col-"],
 .row.gutter-0 > [class*="col-"] {
   padding: 0 !important;
 }
@@ -1359,26 +1380,32 @@
 
 .no-shadow,
 .shadow-none {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
 .shadow-xs {
+  -webkit-box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .shadow-sm {
+  -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.15);
 }
 
 .shadow-md {
+  -webkit-box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.15);
 }
 
 .shadow-lg {
+  -webkit-box-shadow: 0 4px 30px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0 4px 30px 4px rgba(0, 0, 0, 0.15);
 }
 
 .shadow-xl {
+  -webkit-box-shadow: 0 5px 40px 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 5px 40px 5px rgba(0, 0, 0, 0.15);
 }
 
