@@ -2,23 +2,23 @@
 // Radius
 // ----------------------------------------------
 .r-full {
-  border-radius: 100%
+  border-radius: 9999px !important;
 }
 
 .r-t-l-full {
-  border-top-left-radius: 100%
+  border-top-left-radius: 9999px !important;
 }
 
 .r-t-r-full {
-  border-top-right-radius: 100%
+  border-top-right-radius: 9999px !important;
 }
 
 .r-b-r-full {
-  border-bottom-right-radius: 100%
+  border-bottom-right-radius: 9999px !important;
 }
 
 .r-b-l-full {
-  border-bottom-left-radius: 100%
+  border-bottom-left-radius: 9999px !important;
 }
 
 @for $counter from 0 through 10 {

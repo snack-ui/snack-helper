@@ -2,33 +2,33 @@
 // Text Colors
 // --------------------------------------------------
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .text-black {
-  color: #2d353c;
+  color: $black !important;
 }
 
 @each $name,$color in $color-list {
   .text-#{$name} {
-    color: $color;
+    color: $color !important;
   }
   .text-#{$name}-light {
-    color: lighten($color, 15%);
+    color: lighten($color, 15%) !important;
   }
   .text-#{$name}-lighter {
-    color: lighten($color, 25%);
+    color: lighten($color, 25%) !important;
   }
   .text-#{$name}-lightest {
-    color: lighten($color, 35%);
+    color: lighten($color, 35%) !important;
   }
   .text-#{$name}-dark {
-    color: darken($color, 15%);
+    color: darken($color, 15%) !important;
   }
   .text-#{$name}-darker {
-    color: darken($color, 25%);
+    color: darken($color, 25%) !important;
   }
   .text-#{$name}-darkest {
-    color: darken($color, 35%);
+    color: darken($color, 35%) !important;
   }
 }

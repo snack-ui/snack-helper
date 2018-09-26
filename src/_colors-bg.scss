@@ -2,38 +2,38 @@
 // Background Colors
 // --------------------------------------------------
 .bg-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .bg-black {
-  background-color: #2d353c;
+  background-color: $black !important;
 }
 
 @each $name,
 $color in $color-list {
   .bg-#{$name} {
-    background-color: $color;
+    background-color: $color !important;
   }
   .bg-#{$name}-light {
-    background-color: lighten($color, 15%);
+    background-color: lighten($color, 15%) !important;
   }
   .bg-#{$name}-lighter {
-    background-color: lighten($color, 25%);
+    background-color: lighten($color, 25%) !important;
   }
   .bg-#{$name}-lightest {
-    background-color: lighten($color, 35%);
+    background-color: lighten($color, 35%) !important;
   }
   .bg-#{$name}-dark {
-    background-color: darken($color, 15%);
+    background-color: darken($color, 15%) !important;
   }
   .bg-#{$name}-darker {
-    background-color: darken($color, 25%);
+    background-color: darken($color, 25%) !important;
   }
   .bg-#{$name}-darkest {
-    background-color: darken($color, 35%);
+    background-color: darken($color, 35%) !important;
   }
 }
