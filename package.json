@@ -1,6 +1,6 @@
 {
   "name": "snack-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Universal CSS helper class",
   "main": "dist/snack-helper.css",
   "homepage": "https://github.com/nzbin/snack-helper#readme",
