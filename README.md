@@ -11,13 +11,17 @@ Snack-helper is a universal utilities for writting CSS.
 - [Colors](https://nzbin.github.io/snack-helper/#colors)
 - [Paddings](https://nzbin.github.io/snack-helper/#paddings)
 - [Margins](https://nzbin.github.io/snack-helper/#margins)
-- [Typography](https://nzbin.github.io/snack-helper/#typography)
+- [Font](https://nzbin.github.io/snack-helper/#font)
+- [Text](https://nzbin.github.io/snack-helper/#text)
 - [Sizing](https://nzbin.github.io/snack-helper/#size)
 - [Borders](https://nzbin.github.io/snack-helper/#borders)
 - [Radius](https://nzbin.github.io/snack-helper/#radius)
 - [Shadows](https://nzbin.github.io/snack-helper/#shadows)
 - [Alignment](https://nzbin.github.io/snack-helper/#alignment)
-- [Row Spacing](https://nzbin.github.io/snack-helper/#gutters)
+- [Gutters](https://nzbin.github.io/snack-helper/#gutters)
+- [Display](https://nzbin.github.io/snack-helper/#display)
+- [Position](https://nzbin.github.io/snack-helper/#position)
+- [Flex](https://nzbin.github.io/snack-helper/#flex)
 
 ## License
 
