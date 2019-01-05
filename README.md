@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/nzbin/snack-helper)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/snack-ui/snack-helper)
 
-Snack-helper is a universal utilities for writting CSS.
+Snack-helper is a universal CSS helper classes library.
 
 ## Overview
 
