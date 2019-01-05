@@ -1,21 +1,25 @@
 {
   "name": "snack-helper",
   "version": "1.0.1",
-  "description": "Universal CSS helper class",
+  "description": "A universal CSS helper classes library.",
   "main": "dist/snack-helper.css",
+  "files": [
+    "dist",
+    "src"
+  ],
   "homepage": "https://github.com/nzbin/snack-helper#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nzbin/snack-helper.git"
   },
-  "author": "nzbin <nzb329@163.com>",
+  "author": "nzbin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nzbin/snack-helper/issues"
   },
   "keywords": [
-    "css-helpers",
     "snack-helper",
+    "css-helpers",
     "css-variables",
     "sass"
   ],
@@ -37,13 +41,14 @@
     "node": ">=4"
   },
   "scripts": {
-    "start": "run-p build watch",
+    "start": "run-p build:dev watch",
     "build": "run-s clean sass sassmin postcss copy",
+    "build:dev": "run-s sass copy",
     "clean": "rimraf dist",
     "sass": "node-sass --output-style expanded src/helper.scss dist/snack-helper.css",
     "sassmin": "node-sass --output-style compressed src/helper.scss dist/snack-helper.min.css",
     "copy": "cpy dist/*.css !dist/*.min.css docs/css",
     "postcss": "postcss -r dist/*.css --map",
-    "watch": "onchange src -- run-p build"
+    "watch": "onchange src -- run-p build:dev"
   }
 }
