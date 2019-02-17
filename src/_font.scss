@@ -9,7 +9,7 @@
 }
 
 // Font Size
-@for $counter from 5 through 18 {
+@for $counter from 1 through 18 {
   .f-s-#{ $counter * 2 } {
     font-size: ($counter * 2px) !important;
   }
