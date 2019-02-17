@@ -9,6 +9,6 @@
 // shadow spread
 @for $counter from 1 through 5 {
   .shadow-#{ $counter } {
-    box-shadow: 0 $counter * 1px  $counter * 5px $counter * 1px rgba(0, 0, 0, .1) !important;
+    box-shadow: 0 $counter * 1px $counter * 5px $counter * 1px rgba(0, 0, 0, .1) !important;
   }
 }

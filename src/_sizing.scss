@@ -1,19 +1,20 @@
 // ----------------------------------------------
 // Sizing - Height & Width
 // ----------------------------------------------
-.h-full {
-  height: 100% !important;
-}
-
 .w-full {
   width: 100% !important;
 }
 
-@for $counter from 1 through 12 {
-  .h-#{ $counter * 50 } {
-    height: ($counter * 50px) !important;
+.h-full {
+  height: 100% !important;
+}
+
+// The helpers below can be used for setting icons size.
+@for $counter from 1 through 25 {
+  .w-#{ $counter * 2 } {
+    width: ($counter * 2px) !important;
   }
-  .w-#{ $counter * 50 } {
-    width: ($counter * 50px) !important;
+  .h-#{ $counter * 2 } {
+    height: ($counter * 2px) !important;
   }
 }

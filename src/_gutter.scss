@@ -12,9 +12,11 @@
 @for $counter from 1 through 15 {
   $nameCounter: (2 * $counter);
   .row.g-#{ $nameCounter } {
-    margin: 0 -(1px * $counter) !important;
+    margin-left: -(1px * $counter) !important;
+    margin-right: -(1px * $counter) !important;
     &>[class*="col-"] {
-      padding: 0 (1px * $counter) !important;
+      padding-left: (1px * $counter) !important;
+      padding-right: (1px * $counter) !important;
     }
   }
 }
