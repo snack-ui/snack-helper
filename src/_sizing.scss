@@ -10,7 +10,7 @@
 }
 
 // The helpers below can be used for setting icons size.
-@for $counter from 1 through 25 {
+@for $counter from 1 through 18 {
   .w-#{ $counter * 2 } {
     width: ($counter * 2px) !important;
   }
