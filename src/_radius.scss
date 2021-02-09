@@ -25,15 +25,19 @@
   .r-#{ $counter * 2 } {
     border-radius: ($counter * 2px) !important;
   }
+
   .r-t-l-#{ $counter } {
     border-top-left-radius: ($counter * 2px) !important;
   }
+
   .r-t-r-#{ $counter } {
     border-top-right-radius: ($counter * 2px) !important;
   }
+
   .r-b-r-#{ $counter } {
     border-bottom-right-radius: ($counter * 2px) !important;
   }
+
   .r-b-l-#{ $counter } {
     border-bottom-left-radius: ($counter * 2px) !important;
   }

@@ -10,15 +10,19 @@
   .m-#{ $counter * 5 } {
     margin: ($counter * 5px) !important;
   }
+
   .m-t-#{ $counter * 5 } {
     margin-top: ($counter * 5px) !important;
   }
+
   .m-r-#{ $counter * 5 } {
     margin-right: ($counter * 5px) !important;
   }
+
   .m-b-#{ $counter * 5 } {
     margin-bottom: ($counter * 5px) !important;
   }
+
   .m-l-#{ $counter * 5 } {
     margin-left: ($counter * 5px) !important;
   }
@@ -29,12 +33,15 @@
   .m-t--#{ $counter * 5 } {
     margin-top: ($counter * -5px) !important;
   }
+
   .m-r--#{ $counter * 5 } {
     margin-right: ($counter * -5px) !important;
   }
+
   .m-b--#{ $counter * 5 } {
     margin-bottom: ($counter * -5px) !important;
   }
+
   .m-l--#{ $counter * 5 } {
     margin-left: ($counter * -5px) !important;
   }
@@ -45,15 +52,19 @@
   .p-#{ $counter * 5 } {
     padding: ($counter * 5px) !important;
   }
+
   .p-t-#{ $counter * 5 } {
     padding-top: ($counter * 5px) !important;
   }
+
   .p-r-#{ $counter * 5 } {
     padding-right: ($counter * 5px) !important;
   }
+
   .p-b-#{ $counter * 5 } {
     padding-bottom: ($counter * 5px) !important;
   }
+
   .p-l-#{ $counter * 5 } {
     padding-left: ($counter * 5px) !important;
   }

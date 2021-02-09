@@ -13,21 +13,27 @@
   .text-#{$name} {
     color: $color !important;
   }
+
   .text-#{$name}-light {
     color: lighten($color, 15%) !important;
   }
+
   .text-#{$name}-lighter {
     color: lighten($color, 25%) !important;
   }
+
   .text-#{$name}-lightest {
     color: lighten($color, 35%) !important;
   }
+
   .text-#{$name}-dark {
     color: darken($color, 15%) !important;
   }
+
   .text-#{$name}-darker {
     color: darken($color, 25%) !important;
   }
+
   .text-#{$name}-darkest {
     color: darken($color, 35%) !important;
   }

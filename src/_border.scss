@@ -14,15 +14,19 @@
   .b-#{ $counter } {
     border: ($counter * 1px) solid #eee !important;
   }
+
   .b-t-#{ $counter } {
     border-top: ($counter * 1px) solid #eee !important;
   }
+
   .b-r-#{ $counter } {
     border-right: ($counter * 1px) solid #eee !important;
   }
+
   .b-b-#{ $counter } {
     border-bottom: ($counter * 1px) solid #eee !important;
   }
+
   .b-l-#{ $counter } {
     border-left: ($counter * 1px) solid #eee !important;
   }

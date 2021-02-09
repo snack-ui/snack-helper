@@ -14,25 +14,31 @@
 }
 
 @each $name,
-$color in $color-list {
+  $color in $color-list {
   .bg-#{$name} {
     background-color: $color !important;
   }
+
   .bg-#{$name}-light {
     background-color: lighten($color, 15%) !important;
   }
+
   .bg-#{$name}-lighter {
     background-color: lighten($color, 25%) !important;
   }
+
   .bg-#{$name}-lightest {
     background-color: lighten($color, 35%) !important;
   }
+
   .bg-#{$name}-dark {
     background-color: darken($color, 15%) !important;
   }
+
   .bg-#{$name}-darker {
     background-color: darken($color, 25%) !important;
   }
+
   .bg-#{$name}-darkest {
     background-color: darken($color, 35%) !important;
   }

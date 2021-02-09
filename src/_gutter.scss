@@ -4,17 +4,20 @@
 .row.no-gutter,
 .row.g-0 {
   margin: 0 !important;
-  &>[class*="col-"] {
+
+  & > [class*="col-"] {
     padding: 0 !important;
   }
 }
 
 @for $counter from 1 through 15 {
   $nameCounter: (2 * $counter);
+
   .row.g-#{ $nameCounter } {
     margin-left: -(1px * $counter) !important;
     margin-right: -(1px * $counter) !important;
-    &>[class*="col-"] {
+
+    & > [class*="col-"] {
       padding-left: (1px * $counter) !important;
       padding-right: (1px * $counter) !important;
     }
