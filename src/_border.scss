@@ -1,33 +1,32 @@
-// ----------------------------------------------
 // Border
-// ----------------------------------------------
-.no-border {
-  border-width: 0 !important;
-}
 
-.border-none {
-  border-style: none !important;
-}
-
-// border-width with default color and style
-@for $counter from 0 through 5 {
-  .b-#{ $counter } {
-    border: ($counter * 1px) solid #eee !important;
-  }
-
-  .b-t-#{ $counter } {
-    border-top: ($counter * 1px) solid #eee !important;
-  }
-
-  .b-r-#{ $counter } {
-    border-right: ($counter * 1px) solid #eee !important;
-  }
-
-  .b-b-#{ $counter } {
-    border-bottom: ($counter * 1px) solid #eee !important;
-  }
-
-  .b-l-#{ $counter } {
-    border-left: ($counter * 1px) solid #eee !important;
-  }
-}
+$utilities: map-merge(
+  (
+    'border': (
+      property: border,
+      class: b,
+      values: $borders
+    ),
+    'border-top': (
+      property: border-top,
+      class: b-t,
+      values: $borders
+    ),
+    'border-bottom': (
+      property: border-bottom,
+      class: b-b,
+      values: $borders
+    ),
+    'border-right': (
+      property: border-right,
+      class: b-r,
+      values: $borders
+    ),
+    'border-left': (
+      property: border-left,
+      class: b-l,
+      values: $borders
+    )
+  ),
+  $utilities
+);

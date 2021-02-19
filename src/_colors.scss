@@ -1,0 +1,87 @@
+//
+// Text Colors
+//
+
+.text-white {
+  color: $white !important;
+}
+
+.text-black {
+  color: $black !important;
+}
+
+@each $name,$color in $colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+
+  .text-#{$name}-light {
+    color: lighten($color, 15%) !important;
+  }
+
+  .text-#{$name}-lighter {
+    color: lighten($color, 25%) !important;
+  }
+
+  .text-#{$name}-lightest {
+    color: lighten($color, 35%) !important;
+  }
+
+  .text-#{$name}-dark {
+    color: darken($color, 15%) !important;
+  }
+
+  .text-#{$name}-darker {
+    color: darken($color, 25%) !important;
+  }
+
+  .text-#{$name}-darkest {
+    color: darken($color, 35%) !important;
+  }
+}
+
+//
+// Background Colors
+//
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+
+  .bg-#{$name}-light {
+    background-color: lighten($color, 15%) !important;
+  }
+
+  .bg-#{$name}-lighter {
+    background-color: lighten($color, 25%) !important;
+  }
+
+  .bg-#{$name}-lightest {
+    background-color: lighten($color, 35%) !important;
+  }
+
+  .bg-#{$name}-dark {
+    background-color: darken($color, 15%) !important;
+  }
+
+  .bg-#{$name}-darker {
+    background-color: darken($color, 25%) !important;
+  }
+
+  .bg-#{$name}-darkest {
+    background-color: darken($color, 35%) !important;
+  }
+}

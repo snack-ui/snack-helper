@@ -1,38 +1,40 @@
-// ----------------------------------------------
 // Text
-// ----------------------------------------------
-// text-align
-.text-left {
-  text-align: left !important;
-}
 
-.text-center {
-  text-align: center !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-// text-overflow
-.text-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-// uppercase
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-// vertical centering
-.text-middle {
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 100%;
-    vertical-align: middle;
-  }
-}
+$utilities: map-merge(
+  (
+    'font-size': (
+      property: font-size,
+      class: f-s,
+      values: $font-sizes
+    ),
+    'font-weight': (
+      property: font-weight,
+      class: f-w,
+      values: $font-wieghts
+    ),
+    'text-transform': (
+      property: text-transform,
+      class: text,
+      values: capitalize uppercase lowercase
+    ),
+    'text-align': (
+      property: text-align,
+      class: text,
+      values: center right left
+    ),
+    'white-space': (
+      property: white-space,
+      class: text,
+      values: (
+        wrap: normal,
+        nowrap: nowrap
+      )
+    ),
+    'text-overflow': (
+      property: text-overflow,
+      class: text,
+      values: ellipsis
+    )
+  ),
+  $utilities
+);

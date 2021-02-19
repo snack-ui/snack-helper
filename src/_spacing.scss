@@ -1,71 +1,114 @@
-// ----------------------------------------------
-// Spacing - Margin & Padding
-// ----------------------------------------------
-// margin
-.m-auto {
-  margin: 0 auto !important;
-}
+// Spacing
+//
+// Margin & Padding
 
-@for $counter from 0 through 10 {
-  .m-#{ $counter * 5 } {
-    margin: ($counter * 5px) !important;
-  }
-
-  .m-t-#{ $counter * 5 } {
-    margin-top: ($counter * 5px) !important;
-  }
-
-  .m-r-#{ $counter * 5 } {
-    margin-right: ($counter * 5px) !important;
-  }
-
-  .m-b-#{ $counter * 5 } {
-    margin-bottom: ($counter * 5px) !important;
-  }
-
-  .m-l-#{ $counter * 5 } {
-    margin-left: ($counter * 5px) !important;
-  }
-}
-
-// margin negtive
-@for $counter from 1 through 10 {
-  .m-t--#{ $counter * 5 } {
-    margin-top: ($counter * -5px) !important;
-  }
-
-  .m-r--#{ $counter * 5 } {
-    margin-right: ($counter * -5px) !important;
-  }
-
-  .m-b--#{ $counter * 5 } {
-    margin-bottom: ($counter * -5px) !important;
-  }
-
-  .m-l--#{ $counter * 5 } {
-    margin-left: ($counter * -5px) !important;
-  }
-}
-
-// padding
-@for $counter from 0 through 10 {
-  .p-#{ $counter * 5 } {
-    padding: ($counter * 5px) !important;
-  }
-
-  .p-t-#{ $counter * 5 } {
-    padding-top: ($counter * 5px) !important;
-  }
-
-  .p-r-#{ $counter * 5 } {
-    padding-right: ($counter * 5px) !important;
-  }
-
-  .p-b-#{ $counter * 5 } {
-    padding-bottom: ($counter * 5px) !important;
-  }
-
-  .p-l-#{ $counter * 5 } {
-    padding-left: ($counter * 5px) !important;
-  }
-}
+$utilities: map-merge(
+  (
+    'margin': (
+      property: margin,
+      class: m,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    'margin-x': (
+      property: margin-left margin-right,
+      class: m-x,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    'margin-y': (
+      property: margin-top margin-bottom,
+      class: m-y,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    'margin-top': (
+      property: margin-top,
+      class: m-t,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    'margin-right': (
+      property: margin-right,
+      class: m-r,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    'margin-bottom': (
+      property: margin-bottom,
+      class: m-b,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    'margin-left': (
+      property: margin-left,
+      class: m-l,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    'negative-margin': (
+      property: margin,
+      class: m,
+      values: $negative-spacers
+    ),
+    'negative-margin-x': (
+      property: margin-left margin-right,
+      class: m-x,
+      values: $negative-spacers
+    ),
+    'negative-margin-y': (
+      property: margin-top margin-bottom,
+      class: m-y,
+      values: $negative-spacers
+    ),
+    'negative-margin-top': (
+      property: margin-top,
+      class: m-t,
+      values: $negative-spacers
+    ),
+    'negative-margin-right': (
+      property: margin-right,
+      class: m-r,
+      values: $negative-spacers
+    ),
+    'negative-margin-bottom': (
+      property: margin-bottom,
+      class: m-b,
+      values: $negative-spacers
+    ),
+    'negative-margin-left': (
+      property: margin-left,
+      class: m-l,
+      values: $negative-spacers
+    ),
+    'padding': (
+      property: padding,
+      class: p,
+      values: $spacers
+    ),
+    'padding-x': (
+      property: padding-left padding-right,
+      class: p-x,
+      values: $spacers
+    ),
+    'padding-y': (
+      property: padding-top padding-bottom,
+      class: p-y,
+      values: $spacers
+    ),
+    'padding-top': (
+      property: padding-top,
+      class: p-t,
+      values: $spacers
+    ),
+    'padding-right': (
+      property: padding-right,
+      class: p-r,
+      values: $spacers
+    ),
+    'padding-bottom': (
+      property: padding-bottom,
+      class: p-b,
+      values: $spacers
+    ),
+    'padding-left': (
+      property: padding-left,
+      class: p-l,
+      values: $spacers
+    )
+  ),
+  $utilities
+);

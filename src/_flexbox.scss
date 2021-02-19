@@ -1,0 +1,68 @@
+// Flexbox
+
+$utilities: map-merge(
+  (
+    'flex-direction': (
+      property: flex-direction,
+      class: flex,
+      values: (
+        row: row,
+        row-reverse: row-reverse,
+        col: column,
+        col-reverse: column-reverse
+      )
+    ),
+    "flex-wrap": (
+      property: flex-wrap,
+      class: flex,
+      values: wrap nowrap wrap-reverse
+    ),
+    "justify-content": (
+      property: justify-content,
+      class: justify-content,
+      values: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: space-between,
+        around: space-around,
+      )
+    ),
+    "align-content": (
+      property: align-content,
+      class: align-content,
+      values: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: space-between,
+        around: space-around,
+        stretch: stretch,
+      )
+    ),
+    "align-items": (
+      property: align-items,
+      class: align-items,
+      values: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        baseline: baseline,
+        stretch: stretch,
+      )
+    ),
+    "align-self": (
+      property: align-self,
+      class: align-self,
+      values: (
+        auto: auto,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        baseline: baseline,
+        stretch: stretch,
+      )
+    ),
+  ),
+  $utilities
+);

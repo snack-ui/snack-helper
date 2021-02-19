@@ -1,108 +1,131 @@
-// --------------------------------------------------
 // Variables
-// --------------------------------------------------
-// color black
-$black:#2d353c;
-// color gray
-$gray:#999;
-$gray-light:lighten($gray, 15%);
-$gray-lighter:lighten($gray, 25%);
-$gray-lightest:lighten($gray, 35%);
-$gray-dark:darken($gray, 15%);
-$gray-darker:darken($gray, 25%);
-$gray-darkest:darken($gray, 35%);
-// color brown
-$brown:#a57868;
-$brown-light:lighten($brown, 15%);
-$brown-lighter:lighten($brown, 25%);
-$brown-lightest:lighten($brown, 35%);
-$brown-dark:darken($brown, 15%);
-$brown-darker:darken($brown, 25%);
-$brown-darkest:darken($brown, 35%);
-// color red
-$red:#ff291d;
-$red-light:lighten($red, 15%);
-$red-lighter:lighten($red, 25%);
-$red-lightest:lighten($red, 35%);
-$red-dark:darken($red, 15%);
-$red-darker:darken($red, 25%);
-$red-darkest:darken($red, 35%);
-// color orange
-$orange:#ff9500;
-$orange-light:lighten($orange, 15%);
-$orange-lighter:lighten($orange, 25%);
-$orange-lightest:lighten($orange, 35%);
-$orange-dark:darken($orange, 15%);
-$orange-darker:darken($orange, 25%);
-$orange-darkest:darken($orange, 35%);
-// color yellow
-$yellow:#ffe70e;
-$yellow-light:lighten($yellow, 15%);
-$yellow-lighter:lighten($yellow, 25%);
-$yellow-lightest:lighten($yellow, 35%);
-$yellow-dark:darken($yellow, 15%);
-$yellow-darker:darken($yellow, 25%);
-$yellow-darkest:darken($yellow, 35%);
-// color green
-$green:#4cd964;
-$green-light:lighten($green, 15%);
-$green-lighter:lighten($green, 25%);
-$green-lightest:lighten($green, 35%);
-$green-dark:darken($green, 15%);
-$green-darker:darken($green, 25%);
-$green-darkest:darken($green, 35%);
-// color teal
-$teal:#18e0cd;
-$teal-light:lighten($teal, 15%);
-$teal-lighter:lighten($teal, 25%);
-$teal-lightest:lighten($teal, 35%);
-$teal-dark:darken($teal, 15%);
-$teal-darker:darken($teal, 25%);
-$teal-darkest:darken($teal, 35%);
-// color blue
-$blue:#007aff;
-$blue-light:lighten($blue, 15%);
-$blue-lighter:lighten($blue, 25%);
-$blue-lightest:lighten($blue, 35%);
-$blue-dark:darken($blue, 15%);
-$blue-darker:darken($blue, 25%);
-$blue-darkest:darken($blue, 35%);
-// color indigo
-$indigo:#5f6ec7;
-$indigo-light:lighten($indigo, 15%);
-$indigo-lighter:lighten($indigo, 25%);
-$indigo-lightest:lighten($indigo, 35%);
-$indigo-dark:darken($indigo, 15%);
-$indigo-darker:darken($indigo, 25%);
-$indigo-darkest:darken($indigo, 35%);
-// color purple
-$purple:#af2ec5;
-$purple-light:lighten($purple, 15%);
-$purple-lighter:lighten($purple, 25%);
-$purple-lightest:lighten($purple, 35%);
-$purple-dark:darken($purple, 15%);
-$purple-darker:darken($purple, 25%);
-$purple-darkest:darken($purple, 35%);
-// color pink
-$pink:#ff3069;
-$pink-light:lighten($pink, 15%);
-$pink-lighter:lighten($pink, 25%);
-$pink-lightest:lighten($pink, 35%);
-$pink-dark:darken($pink, 15%);
-$pink-darker:darken($pink, 25%);
-$pink-darkest:darken($pink, 35%);
 
-// color map
-$color-list:(
-  'gray':$gray,
-  'brown':$brown,
-  'red':$red,
-  'orange':$orange,
-  'yellow':$yellow,
-  'green':$green,
-  'teal':$teal,
-  'blue':$blue,
-  'indigo':$indigo,
-  'purple':$purple,
-  'pink':$pink
-);
+// Colors
+
+$white: white !default;
+$black:#2d353c !default;
+$gray:#969696 !default;
+$brown:#a57868 !default;
+$red:#ff291d !default;
+$orange:#ff9500 !default;
+$yellow:#ffe70e !default;
+$green:#4cd964 !default;
+$teal:#18e0cd !default;
+$blue:#007aff !default;
+$indigo:#5f6ec7 !default;
+$purple:#af2ec5 !default;
+$pink:#ff3069 !default;
+
+$colors: (
+  'gray': $gray,
+  'brown': $brown,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink
+) !default;
+
+// Utility Map
+
+$utilities: () !default;
+
+// Spacing
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  4: $spacer * .25,
+  8: $spacer * .5,
+  12: $spacer * .75,
+  16: $spacer,
+  24: $spacer * 1.5,
+  32: $spacer * 2,
+  48: $spacer * 3
+) !default;
+$spacers-extend: () !default;
+$spacers: map-merge($spacers, $spacers-extend);
+$negative-spacers: negativify-map($spacers) !default;
+
+// Border
+
+$border-color: rgba(0, 0, 0, .12) !default;
+$borders: (
+  0: 0,
+  1: 1px solid $border-color,
+  2: 2px solid $border-color,
+  4: 4px solid $border-color,
+  8: 8px solid $border-color
+) !default;
+$borders-extend: () !default;
+$borders: map-merge($borders, $borders-extend);
+
+// Border radius
+
+$radius-base: 1rem/4 !default;
+$radius: (
+  0: 0,
+  4: $radius-base,
+  8: $radius-base * 2,
+  12: $radius-base * 3,
+  16: $radius-base * 4,
+  full: 9999px
+) !default;
+$radius-extend: () !default;
+$radius: map-merge($radius, $radius-extend);
+
+// Shadow
+
+$shadows: (
+  1: (0 2px 4px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .06)),
+  2: (0 4px 8px -1px rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .06)),
+  3: (0 8px 16px -2px rgba(0, 0, 0, .12), 0 4px 8px -2px rgba(0, 0, 0, .06)),
+  4: (0 16px 32px -4px rgba(0, 0, 0, .12), 0 8px 16px -4px rgba(0, 0, 0, .06)),
+  5: (0 24px 48px -8px rgba(0, 0, 0, .12), 0 16px 32px -8px rgba(0, 0, 0, .06))
+) !default;
+$shadows-extend: () !default;
+$shadows: map-merge($shadows, $shadows-extend);
+
+// Text
+
+$font-wieghts: (
+  100: 100,
+  200: 200,
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600,
+  700: 700,
+  800: 800,
+  900: 900
+) !default;
+
+$font-sizes: (
+  0: 0,
+  10: .625rem,
+  12: .75rem,
+  14: .875rem,
+  16: 1rem,
+  18: 1.125rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  32: 2rem,
+) !default;
+
+// Sizing
+
+$sizes: (
+  20: 20%,
+  25: 25%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  75: 75%,
+  80: 80%,
+  full: 100%,
+  auto: auto
+) !default;

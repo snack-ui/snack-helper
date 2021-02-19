@@ -1,18 +1,12 @@
-// ----------------------------------------------
 // Display
-// ----------------------------------------------
-.d-block {
-  display: block !important;
-}
 
-.d-inline-block {
-  display: inline-block !important;
-}
-
-.d-inline {
-  display: inline !important;
-}
-
-.d-none {
-  display: none !important;
-}
+$utilities: map-merge(
+  (
+    'display': (
+      property: display,
+      class: d,
+      values: block inline-block inline flex inline-flex none
+    )
+  ),
+  $utilities
+);

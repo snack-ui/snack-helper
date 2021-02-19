@@ -1,14 +1,12 @@
-// ----------------------------------------------
-// box-shadow
-// ----------------------------------------------
-.no-shadow,
-.shadow-none {
-  box-shadow: none !important;
-}
+// Shadow
 
-// shadow spread
-@for $counter from 1 through 5 {
-  .shadow-#{ $counter } {
-    box-shadow: 0 $counter * 1px $counter * 5px $counter * 1px rgba(0, 0, 0, .1) !important;
-  }
-}
+$utilities: map-merge(
+  (
+    'box-shadow': (
+      property: box-shadow,
+      class: shadow,
+      values: $shadows
+    )
+  ),
+  $utilities
+);

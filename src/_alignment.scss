@@ -1,15 +1,12 @@
-// ----------------------------------------------
 // Alignment
-// ----------------------------------------------
-// vetical-align
-.align-top {
-  vertical-align: top !important;
-}
 
-.align-middle {
-  vertical-align: middle !important;
-}
-
-.align-bottom {
-  vertical-align: bottom !important;
-}
+$utilities: map-merge(
+  (
+    'vertical-align': (
+      property: vertical-align,
+      class: align,
+      values: top middle bottom
+    )
+  ),
+  $utilities
+);

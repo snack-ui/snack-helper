@@ -1,14 +1,12 @@
-// ----------------------------------------------
 // Float
-// ----------------------------------------------
-.float-left {
-  float: left !important;
-}
 
-.float-right {
-  float: right !important;
-}
-
-.float-none {
-  float: none !important;
-}
+$utilities: map-merge(
+  (
+    'float': (
+      property: float,
+      class: float,
+      values: left right none
+    )
+  ),
+  $utilities
+);

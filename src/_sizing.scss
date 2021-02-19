@@ -1,21 +1,19 @@
-// ----------------------------------------------
-// Sizing - Height & Width
-// ----------------------------------------------
-.w-full {
-  width: 100% !important;
-}
+// Sizing
+//
+// Width & Height
 
-.h-full {
-  height: 100% !important;
-}
-
-// The helpers below can be used for setting icons size.
-@for $counter from 1 through 18 {
-  .w-#{ $counter * 2 } {
-    width: ($counter * 2px) !important;
-  }
-
-  .h-#{ $counter * 2 } {
-    height: ($counter * 2px) !important;
-  }
-}
+$utilities: map-merge(
+  (
+    'width': (
+      property: width,
+      class: w,
+      values: $sizes
+    ),
+    'height': (
+      property: height,
+      class: h,
+      values: $sizes
+    )
+  ),
+  $utilities
+);
