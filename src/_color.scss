@@ -10,7 +10,7 @@
   color: $black !important;
 }
 
-@each $name,$color in $colors {
+@each $name, $color in $colors {
   .text-#{$name} {
     color: $color !important;
   }
