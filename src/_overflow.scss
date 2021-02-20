@@ -5,17 +5,17 @@ $utilities: map-merge(
     'overflow': (
       property: overflow,
       class: overflow,
-      values: auto hidden scroll
+      values: auto hidden visible scroll
     ),
     'overflow-x': (
       property: overflow-x,
       class: overflow-x,
-      values: hidden scroll
+      values: hidden visible scroll
     ),
     'overflow-y': (
       property: overflow-y,
       class: overflow-y,
-      values: hidden scroll
+      values: hidden visible scroll
     )
   ),
   $utilities

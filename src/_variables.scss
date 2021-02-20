@@ -81,6 +81,7 @@ $radius: map-merge($radius, $radius-extend);
 // Shadow
 
 $shadows: (
+  none: none,
   1: (0 2px 4px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .06)),
   2: (0 4px 8px -1px rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .06)),
   3: (0 8px 16px -2px rgba(0, 0, 0, .12), 0 4px 8px -2px rgba(0, 0, 0, .06)),
@@ -119,6 +120,7 @@ $font-sizes: (
 // Sizing
 
 $sizes: (
+  0: 0,
   20: 20%,
   25: 25%,
   40: 40%,
