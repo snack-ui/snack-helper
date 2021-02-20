@@ -17,13 +17,13 @@
     "sass",
     "scss"
   ],
-  "homepage": "https://nzbin.github.io/snack-helper/",
+  "homepage": "https://snack-ui.github.io/snack-helper/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nzbin/snack-helper.git"
+    "url": "git+https://github.com/snack-ui/snack-helper.git"
   },
   "bugs": {
-    "url": "https://github.com/nzbin/snack-helper/issues"
+    "url": "https://github.com/snack-ui/snack-helper/issues"
   },
   "scripts": {
     "start": "run-p build:dev watch",
@@ -35,7 +35,8 @@
     "copy": "cpy dist/*.css !dist/*.min.css docs/css",
     "postcss": "postcss -r dist/*.css --map",
     "watch": "onchange src -- run-p build:dev",
-    "lint": "stylelint --syntax scss 'src/**/*.scss' --fix"
+    "lint": "stylelint --syntax scss 'src/**/*.scss' --fix",
+    "publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
