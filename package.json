@@ -1,7 +1,7 @@
 {
   "name": "snack-helper",
   "version": "2.0.0",
-  "description": "A universal CSS helpers library.",
+  "description": "A universal CSS helper library.",
   "main": "dist/snack-helper.css",
   "files": [
     "dist",
