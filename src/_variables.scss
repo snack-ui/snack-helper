@@ -2,32 +2,32 @@
 
 // Colors
 
-$white: white !default;
-$black:#2d353c !default;
-$gray:#969696 !default;
-$brown:#a57868 !default;
-$red:#ff291d !default;
-$orange:#ff9500 !default;
-$yellow:#ffe70e !default;
-$green:#4cd964 !default;
-$teal:#18e0cd !default;
-$blue:#007aff !default;
-$indigo:#5f6ec7 !default;
-$purple:#af2ec5 !default;
-$pink:#ff3069 !default;
+$white:  white !default;
+$black:  #2d353c !default;
+$gray:   #969696 !default;
+$brown:  #a57868 !default;
+$red:    #ff291d !default;
+$orange: #ff9500 !default;
+$yellow: #ffe70e !default;
+$green:  #4cd964 !default;
+$teal:   #18e0cd !default;
+$blue:   #007aff !default;
+$indigo: #5f6ec7 !default;
+$purple: #af2ec5 !default;
+$pink:   #ff3069 !default;
 
 $colors: (
-  'gray': $gray,
-  'brown': $brown,
-  'red': $red,
+  'gray':   $gray,
+  'brown':  $brown,
+  'red':    $red,
   'orange': $orange,
   'yellow': $yellow,
-  'green': $green,
-  'teal': $teal,
-  'blue': $blue,
+  'green':  $green,
+  'teal':   $teal,
+  'blue':   $blue,
   'indigo': $indigo,
   'purple': $purple,
-  'pink': $pink
+  'pink':   $pink
 ) !default;
 
 // Utility Map
@@ -73,7 +73,7 @@ $radius: (
   8: $radius-base * 2,
   12: $radius-base * 3,
   16: $radius-base * 4,
-  full: 9999px
+  full: 50rem
 ) !default;
 $radius-extend: () !default;
 $radius: map-merge($radius, $radius-extend);
