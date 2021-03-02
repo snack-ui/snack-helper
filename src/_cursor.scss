@@ -1,0 +1,12 @@
+// Cursor
+
+$utilities: map-merge(
+  (
+    'cursor': (
+      property: cursor,
+      class: cursor,
+      values: default pointer not-allowed
+    )
+  ),
+  $utilities
+);
