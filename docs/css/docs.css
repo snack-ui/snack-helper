@@ -12,13 +12,13 @@
   margin: 0;
 }
 
-.sidebar > ul > li + li {
-  margin-top: 2px;
-}
-
 .sidebar > ul > li {
   position: relative;
   display: block;
+}
+
+.sidebar > ul > li + li {
+  margin-top: 2px;
 }
 
 .sidebar > ul > li > a {
