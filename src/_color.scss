@@ -1,6 +1,7 @@
-//
+@use 'sass:color';
+@use 'variables' as *;
+
 // Text Colors
-//
 
 .text-white {
   color: $white !important;
@@ -16,33 +17,31 @@
   }
 
   .text-#{$name}-light {
-    color: lighten($color, 15%) !important;
+    color: color.adjust($color, $lightness: 15%) !important;
   }
 
   .text-#{$name}-lighter {
-    color: lighten($color, 25%) !important;
+    color: color.adjust($color, $lightness: 25%) !important;
   }
 
   .text-#{$name}-lightest {
-    color: lighten($color, 35%) !important;
+    color: color.adjust($color, $lightness: 35%) !important;
   }
 
   .text-#{$name}-dark {
-    color: darken($color, 15%) !important;
+    color: color.adjust($color, $lightness: -15%) !important;
   }
 
   .text-#{$name}-darker {
-    color: darken($color, 25%) !important;
+    color: color.adjust($color, $lightness: -25%) !important;
   }
 
   .text-#{$name}-darkest {
-    color: darken($color, 35%) !important;
+    color: color.adjust($color, $lightness: -35%) !important;
   }
 }
 
-//
 // Background Colors
-//
 
 .bg-white {
   background-color: $white !important;
@@ -62,26 +61,26 @@
   }
 
   .bg-#{$name}-light {
-    background-color: lighten($color, 15%) !important;
+    background-color: color.adjust($color, $lightness: 15%) !important;
   }
 
   .bg-#{$name}-lighter {
-    background-color: lighten($color, 25%) !important;
+    background-color: color.adjust($color, $lightness: 25%) !important;
   }
 
   .bg-#{$name}-lightest {
-    background-color: lighten($color, 35%) !important;
+    background-color: color.adjust($color, $lightness: 35%) !important;
   }
 
   .bg-#{$name}-dark {
-    background-color: darken($color, 15%) !important;
+    background-color: color.adjust($color, $lightness: -15%) !important;
   }
 
   .bg-#{$name}-darker {
-    background-color: darken($color, 25%) !important;
+    background-color: color.adjust($color, $lightness: -25%) !important;
   }
 
   .bg-#{$name}-darkest {
-    background-color: darken($color, 35%) !important;
+    background-color: color.adjust($color, $lightness: -35%) !important;
   }
 }

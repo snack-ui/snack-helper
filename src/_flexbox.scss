@@ -1,6 +1,7 @@
-// Flexbox
+@use 'sass:map';
+@use 'variables' as *;
 
-$utilities: map-merge(
+$utilities: map.merge(
   (
     'flex-direction': (
       property: flex-direction,
@@ -12,12 +13,12 @@ $utilities: map-merge(
         col-reverse: column-reverse
       )
     ),
-    "flex-wrap": (
+    'flex-wrap': (
       property: flex-wrap,
       class: flex,
       values: wrap nowrap wrap-reverse
     ),
-    "justify-content": (
+    'justify-content': (
       property: justify-content,
       class: justify-content,
       values: (
@@ -28,7 +29,7 @@ $utilities: map-merge(
         around: space-around,
       )
     ),
-    "align-content": (
+    'align-content': (
       property: align-content,
       class: align-content,
       values: (
@@ -40,7 +41,7 @@ $utilities: map-merge(
         stretch: stretch,
       )
     ),
-    "align-items": (
+    'align-items': (
       property: align-items,
       class: align-items,
       values: (
@@ -51,7 +52,7 @@ $utilities: map-merge(
         stretch: stretch,
       )
     ),
-    "align-self": (
+    'align-self': (
       property: align-self,
       class: align-self,
       values: (

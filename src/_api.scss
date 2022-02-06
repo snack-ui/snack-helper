@@ -1,15 +1,35 @@
-// Generate Helpers
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:list';
+// --------------------
+@use 'variables' as *;
+// --------------------
+@use 'position';
+@use 'display';
+@use 'flexbox';
+@use 'float';
+@use 'sizing';
+@use 'spacing';
+@use 'overflow';
+@use 'text';
+@use 'alignment';
+@use 'cursor';
+@use 'border';
+@use 'rounded';
+@use 'shadow';
+@use 'image';
 
+// Generate Helpers
 @each $key, $utility in $utilities {
-  $values: map-get($utility, values);
+  $values: map.get($utility, values);
 
   // If the values are a list or string, convert it into a map
-  @if type-of($values) == "string" or type-of(nth($values, 1)) != "list" {
-    $values: zip($values, $values);
+  @if meta.type-of($values) == 'string' or meta.type-of(list.nth($values, 1)) != 'list' {
+    $values: list.zip($values, $values);
   }
 
-  $properties: map-get($utility, property);
-  $property-class-prefix: map-get($utility, class);
+  $properties: map.get($utility, property);
+  $property-class-prefix: map.get($utility, class);
 
   // Utility class maybe empty, (e.g. with position class)
   $property-class-prefix-hyphen: if(
