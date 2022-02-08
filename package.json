@@ -5,7 +5,8 @@
   "main": "dist/snack-helper.css",
   "files": [
     "dist",
-    "src"
+    "src",
+    "_index.scss"
   ],
   "author": "nzbin",
   "license": "MIT",
