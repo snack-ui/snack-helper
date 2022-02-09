@@ -15,14 +15,10 @@ $ npm install snack-helper --save
 ## Usage
 
 ```scss
-@import '~snack-helper/dist/snack-helper.css';
+@use 'snack-helper';
 ```
 
-If you use `scss` language, you can import the original files.
-
-```scss
-@import '~snack-helper/src/snack-helper';
-```
+The @use-based Sass API is only available in the version 2.2.0 or above.
 
 ## Customization
 
@@ -47,28 +43,28 @@ $spacers: (
 You can cover the whole original spacing with `$spacers` as you like.
 
 ```scss
-$spacers: (
-  0: 0,
-  1: .25rem,
-  2: .5rem,
-  3: .75rem,
-  4: 1rem,
-  5: 1.5rem
+@use 'snack-helper' with (
+  $spacers: (
+    0: 0,
+    1: .25rem,
+    2: .5rem,
+    3: .75rem,
+    4: 1rem,
+    5: 1.5rem
+  )
 );
-
-@import '~snack-helper/src/snack-helper';
 ```
 
 If you just want to extend the original spacing, you can use the `$spacers-extend`;
 
 ```scss
-$spacers-extend: (
-  5: 5px,
-  10: 10px,
-  15: 15px
+@use '~snack-helper' with (
+  $spacers-extend: (
+    5: 5px,
+    10: 10px,
+    15: 15px
+  )
 );
-
-@import '~snack-helper/src/snack-helper';
 ```
 
 ## Overview
