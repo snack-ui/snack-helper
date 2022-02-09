@@ -58,7 +58,7 @@ You can cover the whole original spacing with `$spacers` as you like.
 If you just want to extend the original spacing, you can use the `$spacers-extend`;
 
 ```scss
-@use '~snack-helper' with (
+@use 'snack-helper' with (
   $spacers-extend: (
     5: 5px,
     10: 10px,
