@@ -48,7 +48,7 @@
     "postcss-header": "^3.0.1",
     "rimraf": "^3.0.2",
     "sass": "^1.49.7",
-    "stylelint": "^14.3.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-recommended-scss": "^5.0.2",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-scss": "^4.1.0"
